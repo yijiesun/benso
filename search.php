@@ -1,4 +1,5 @@
 <HTML><HEAD><TITLE>benso</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
 <SCRIPT LANGUAGE="JavaScript">
 </SCRIPT>
 <?php
@@ -17,7 +18,7 @@ name=popforum bordercolor="#3E77B3" target="right">
   <FRAME src="middle.htm" name=midFrame 
 frameBorder=0 scrolling=no noResize bordercolor="#3E77B3">
     <FRAME 
-src="http://www.baidu.com/s?pn=<?php echo $start;?>&wd=<?php echo urlencode($q);?>" name=popmain bordercolor="#3E77B3">
+src="https://www.baidu.com/s?wd=<?php echo $q;?>" name=popmain bordercolor="#3E77B3">
   </FRAMESET><NOFRAMES></NOFRAMES></FRAMESET>
 <DIV style="DISPLAY: none">
 <A href="https://github.com/yijiesun">syj</A>
