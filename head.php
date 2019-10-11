@@ -1,8 +1,7 @@
 <HTML>
 <HEAD>
-<TITLE>百度google一起搜工具</TITLE>
-<!--程序作者:松树,QQ:820847036-->
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<TITLE>benso</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
 <style type="text/css">
 BODY {
 	MARGIN: 0px;
@@ -11,7 +10,6 @@ BODY {
 TD {
 	FONT-SIZE: 9pt; FONT-FAMILY: SimSun
 }
-
 .style2 {color: #000000}
 a:active    {COLOR: #000000; text-decoration:underline}
 a:link       {COLOR: #000000; text-decoration:underline}
@@ -25,7 +23,6 @@ $hl=$_GET['hl'];
 $q=$_GET['q'];
 $num=$_GET['num'];
 $start=$_GET['start'];
-
 if(empty($start)){
 $start=$_GET['num'];
 $start=(int)$start;}
@@ -34,7 +31,6 @@ $start=0;}
 else{
 $start=(int)$start;}
 ?>
-
  
  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 background=images/bg_toolbar.gif>
       
@@ -47,24 +43,14 @@ $start=(int)$start;}
             style="FONT-WEIGHT: bold; COLOR: #000000">
 			
             <form action="search.php" method="get" name="f" target=_parent>
-<p style="margin: 0px; padding: 0px;">  <a href="default.htm" target="_top"><span class="style2">回首页</span></a>&nbsp;<a href="https://a.sudo.gq/search?source=hp&ei=AeufXefIFo3O0PEP55iq8Aw&q=<?php echo $q;?>" target="_blank"><span class="style2">展开Google</span></a>&nbsp;<a href="http://www.baidu.com/s?ie=gb2312&word=<?php echo $q;?>&pn=<?php if($_GET['num']!=""){echo $num;}else{echo 0;}?>" target="_blank"><span class="style2">展开百度</span></a></font>&nbsp;&nbsp;
+<p style="margin: 0px; padding: 0px;">  <a href="default.htm" target="_top"><span class="style2">home</span></a>&nbsp;<a href="https://seeres.com/search?q=<?php echo $q;?>" target="_blank"><span class="style2">Google</span></a>&nbsp;<a href="http://www.baidu.com/s?ie=gb2312&word=<?php echo $q;?>" target="_blank"><span class="style2">baidu</span></a></font>&nbsp;&nbsp;
     <input size="30" name="q" type="text" value=<?php echo urldecode($q);?>>
-	<select name="num">
-	<option value="10" <?php $num=(int)$num; if($num==10){echo 'selected';}?>>每页显示10条</option>
-	<option value="20" <?php if($num==20){echo 'selected';}?>>每页显示20条</option>
-	<option value="50" <?php if($num==50){echo 'selected';}?>>每页显示50条</option>
-	<option value="100" <?php if($num==100){echo 'selected';}?>>每页100条</option>
-	</select>
 	&nbsp;
-	<input value="搜索" type="submit">&nbsp;
-	<span style="CURSOR: hand" onClick="window.external.addFavorite('http://','百度谷歌搜索区别')" title="百度谷歌搜索区别">收藏本站</span>
+	<input value="GO" type="submit">&nbsp;
 	<?php if(!empty($start)){?>
 	<?php if($start>0){?>
-	<a href="search.php?q=<?php echo $q=urlencode($_GET['q']);?>&start=
-	<?php if(!empty($start) || (int)$start>0){echo $start-(int)$num;}?>&num=<?php if(!empty($num)){echo $num;}else{echo 20;}?>" target="_top">上一页</a>
 	<?php }?>
 	<?php }?>
-	&nbsp;<a href="search.php?q=<?php echo $q=urlencode($_GET['q']);?>&start=<?php if(!empty($start)){echo $start+$num;}else{$start;}?>&num=<?php if(!empty($num)){echo $num;}else{echo 20;}?>" target="_top">下一页</a>
 </center>
             </form>
 </TD></TR></TABLE> 

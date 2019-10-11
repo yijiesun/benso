@@ -1,9 +1,5 @@
-<HTML><HEAD><TITLE>百度google一起搜工具</TITLE>
+<HTML><HEAD><TITLE>benso</TITLE>
 <SCRIPT LANGUAGE="JavaScript">
-<!--
-var location = '';
-window.status = '百度google';
--->
 </SCRIPT>
 <?php
 $hl=$_GET['hl'];
@@ -21,9 +17,9 @@ name=popforum bordercolor="#3E77B3" target="right">
   <FRAME src="middle.htm" name=midFrame 
 frameBorder=0 scrolling=no noResize bordercolor="#3E77B3">
     <FRAME 
-src="http://www.baidu.com/s?pn=<?php echo $start;?>&wd=<?php echo urlencode($q);?>&cl=3&rn=<?php echo $num;?>" name=popmain bordercolor="#3E77B3">
+src="http://www.baidu.com/s?pn=<?php echo $start;?>&wd=<?php echo urlencode($q);?>" name=popmain bordercolor="#3E77B3">
   </FRAMESET><NOFRAMES></NOFRAMES></FRAMESET>
 <DIV style="DISPLAY: none">
-<A href="http://www.chaojixuan.com/">上海网站制作</A>
-<A href="http://www.chengduwangzhanjianshe.com/" >成都网站建设</A>
+<A href="https://github.com/yijiesun">syj</A>
+<A href="https://github.com/yijiesun" >syj</A>
 </DIV></HTML>
