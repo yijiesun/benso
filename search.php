@@ -16,7 +16,7 @@ frameSpacing=0 frameBorder=0 border=0 bordercolor="#3E77B3">
 frameSpacing=0 src="head.php?q=<?php echo urlencode($q);?>&start=<?php echo $start;?>&num=<?php echo $num;?>" frameBorder=NO 
 scrolling=no>
 <FRAMESET cols=50%,11,* bordercolor="#3E77B3" id=myFrame>
-  <FRAME class=a src="http://www.google.cn/search?hl=<?php echo $hl;?>&ie=GB2312&q=<?php echo urlencode($q);?>&start=<?php echo $start;?>&num=<?php echo $num;?>" 
+  <FRAME class=a src="https://seeres.com/search?q=<?php echo $q;?>" 
 name=popforum bordercolor="#3E77B3" target="right">
   <FRAME src="middle.htm" name=midFrame 
 frameBorder=0 scrolling=no noResize bordercolor="#3E77B3">
@@ -27,4 +27,3 @@ src="http://www.baidu.com/s?pn=<?php echo $start;?>&wd=<?php echo urlencode($q);
 <A href="http://www.chaojixuan.com/">上海网站制作</A>
 <A href="http://www.chengduwangzhanjianshe.com/" >成都网站建设</A>
 </DIV></HTML>
-

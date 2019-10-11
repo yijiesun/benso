@@ -47,7 +47,7 @@ $start=(int)$start;}
             style="FONT-WEIGHT: bold; COLOR: #000000">
 			
             <form action="search.php" method="get" name="f" target=_parent>
-<p style="margin: 0px; padding: 0px;">  <a href="default.htm" target="_top"><span class="style2">回首页</span></a>&nbsp;<a href="http://www.google.com/search?q=<?php echo $q;?>&start=<?php if(!empty($_GET['num'])){echo $num;}else{echo 0;}?>" target="_blank"><span class="style2">展开Google</span></a>&nbsp;<a href="http://www.baidu.com/s?ie=gb2312&word=<?php echo $q;?>&pn=<?php if($_GET['num']!=""){echo $num;}else{echo 0;}?>" target="_blank"><span class="style2">展开百度</span></a></font>&nbsp;&nbsp;
+<p style="margin: 0px; padding: 0px;">  <a href="default.htm" target="_top"><span class="style2">回首页</span></a>&nbsp;<a href="https://a.sudo.gq/search?source=hp&ei=AeufXefIFo3O0PEP55iq8Aw&q=<?php echo $q;?>" target="_blank"><span class="style2">展开Google</span></a>&nbsp;<a href="http://www.baidu.com/s?ie=gb2312&word=<?php echo $q;?>&pn=<?php if($_GET['num']!=""){echo $num;}else{echo 0;}?>" target="_blank"><span class="style2">展开百度</span></a></font>&nbsp;&nbsp;
     <input size="30" name="q" type="text" value=<?php echo urldecode($q);?>>
 	<select name="num">
 	<option value="10" <?php $num=(int)$num; if($num==10){echo 'selected';}?>>每页显示10条</option>
